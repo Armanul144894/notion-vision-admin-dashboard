@@ -653,137 +653,197 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-5 p-6 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-5 p-6 gap-6">
             <div
-              class="bg-blue-500 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 text-white font-medium group lg:col-span-2"
+              class="bg-white dark:bg-gray-800 rounded-md flex items-center justify-between text-white font-medium group lg:col-span-2"
             >
-              <div class="w-100 bg-white p-6 rounded shadow-md">
-                <h2 class="text-2xl font-semibold mb-4">Text Generator Form</h2>
-
+              <div class="w-full rounded shadow-md p-5">
+                <div class="mb-4 dark:bg-[#627789] p-3 rounded">
+                  <p class="flex items-center justify-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="19"
+                      viewBox="0 0 18 19"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.25 2V10.25H7.5V17L12.75 8H9.75L12.75 2H5.25Z"
+                        fill="white"
+                      /></svg
+                    >Your Balance is 1,000 Words
+                  </p>
+                </div>
                 <!-- Language Select Field -->
-                <div class="mb-4">
+                <div class="mb-4 dark:bg-gray-600 bg-gray-300 p-3 rounded">
                   <label
-                    for="language"
-                    class="block text-sm font-medium text-gray-600"
+                    for="countries"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >Language</label
                   >
                   <select
-                    id="language"
-                    name="language"
-                    class="mt-1 p-2 border rounded w-full"
+                    id="countries"
+                    class="dark:bg-gray-600 bg-gray-300 text-gray-900 m-0 px-0 py-3 text-sm border-0 block w-full dark:placeholder-gray-400 dark:text-white"
                   >
-                    <!-- Add language options as needed -->
-                    <option value="english">English</option>
-                    <option value="spanish">Spanish</option>
-                    <!-- Add more options as needed -->
+                    <option selected class="flex">
+                      <img src="assets/dashboard/country.png" alt="" /><span
+                        >English (USA)</span
+                      >
+                    </option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
                   </select>
                 </div>
 
                 <!-- Product Description Field -->
-                <div class="mb-4">
+                <div class="mb-4 dark:bg-gray-600 bg-gray-300 p-3 rounded">
                   <label
                     for="productDescription"
-                    class="block text-sm font-medium text-gray-600"
-                    >Product Description</label
+                    class="block text-sm font-medium text-gray-900 dark:text-white flex justify-between items-center"
+                    >Product Description <span>0/2000</span></label
                   >
                   <textarea
                     id="productDescription"
                     name="productDescription"
-                    rows="3"
-                    class="mt-1 p-2 border rounded w-full"
+                    placeholder="Enter your product description here"
+                    rows="4"
+                    class="dark:bg-gray-600 bg-gray-300 text-gray-900 m-0 px-0 py-3 text-sm border-0 block w-full dark:placeholder-gray-400 dark:text-white"
                   ></textarea>
                 </div>
 
-                <!-- Creativity Select Field -->
-                <div class="mb-4">
-                  <label
-                    for="creativity"
-                    class="block text-sm font-medium text-gray-600"
-                    >Creativity Level</label
-                  >
-                  <select
-                    id="creativity"
-                    name="creativity"
-                    class="mt-1 p-2 border rounded w-full"
-                  >
-                    <!-- Add creativity level options as needed -->
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                  </select>
-                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-4">
+                  <!-- Creativity Select Field -->
+                  <div class="mb-4 dark:bg-gray-600 bg-gray-300 p-3 rounded">
+                    <label
+                      for="creativity"
+                      class="block text-sm font-medium text-gray-600"
+                      >Creativity Level</label
+                    >
+                    <select
+                      id="creativity"
+                      name="creativity"
+                      class="dark:bg-gray-600 bg-gray-300 text-gray-900 m-0 px-0 py-3 text-sm border-0 block w-full dark:placeholder-gray-400 dark:text-white"
+                    >
+                      <!-- Add creativity level options as needed -->
+                      <option value="low">Low</option>
+                      <option value="medium">Medium</option>
+                      <option value="high">High</option>
+                    </select>
+                  </div>
 
-                <!-- Tone of Voice Select Field -->
-                <div class="mb-4">
-                  <label
-                    for="toneOfVoice"
-                    class="block text-sm font-medium text-gray-600"
-                    >Tone of Voice</label
-                  >
-                  <select
-                    id="toneOfVoice"
-                    name="toneOfVoice"
-                    class="mt-1 p-2 border rounded w-full"
-                  >
-                    <!-- Add tone of voice options as needed -->
-                    <option value="formal">Formal</option>
-                    <option value="informal">Informal</option>
-                    <!-- Add more options as needed -->
-                  </select>
-                </div>
+                  <!-- Tone of Voice Select Field -->
+                  <div class="mb-4 dark:bg-gray-600 bg-gray-300 p-3 rounded">
+                    <label
+                      for="toneOfVoice"
+                      class="block text-sm font-medium text-gray-600"
+                      >Tone of Voice</label
+                    >
+                    <select
+                      id="toneOfVoice"
+                      name="toneOfVoice"
+                      class="dark:bg-gray-600 bg-gray-300 text-gray-900 m-0 px-0 py-3 text-sm border-0 block w-full dark:placeholder-gray-400 dark:text-white"
+                    >
+                      <!-- Add tone of voice options as needed -->
+                      <option value="formal">Formal</option>
+                      <option value="informal">Informal</option>
+                      <!-- Add more options as needed -->
+                    </select>
+                  </div>
 
-                <!-- Number of Results Select Field -->
-                <div class="mb-4">
-                  <label
-                    for="numberOfResults"
-                    class="block text-sm font-medium text-gray-600"
-                    >Number of Results</label
-                  >
-                  <select
-                    id="numberOfResults"
-                    name="numberOfResults"
-                    class="mt-1 p-2 border rounded w-full"
-                  >
-                    <!-- Add number of results options as needed -->
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
-                </div>
+                  <!-- Number of Results Select Field -->
+                  <div class="mb-4 dark:bg-gray-600 bg-gray-300 p-3 rounded">
+                    <label
+                      for="numberOfResults"
+                      class="block text-sm font-medium text-gray-600"
+                      >Number of Results</label
+                    >
+                    <select
+                      id="numberOfResults"
+                      name="numberOfResults"
+                      class="dark:bg-gray-600 bg-gray-300 text-gray-900 m-0 px-0 py-3 text-sm border-0 block w-full dark:placeholder-gray-400 dark:text-white"
+                    >
+                      <!-- Add number of results options as needed -->
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
 
-                <!-- Max Result Length Select Field -->
-                <div class="mb-4">
-                  <label
-                    for="maxResultLength"
-                    class="block text-sm font-medium text-gray-600"
-                    >Max Result Length</label
-                  >
-                  <select
-                    id="maxResultLength"
-                    name="maxResultLength"
-                    class="mt-1 p-2 border rounded w-full"
-                  >
-                    <!-- Add max result length options as needed -->
-                    <option value="short">Short</option>
-                    <option value="medium">Medium</option>
-                    <option value="long">Long</option>
-                  </select>
+                  <!-- Max Result Length Select Field -->
+                  <div class="mb-4 dark:bg-gray-600 bg-gray-300 p-3 rounded">
+                    <label
+                      for="maxResultLength"
+                      class="block text-sm font-medium text-gray-600"
+                      >Max Result Length</label
+                    >
+                    <select
+                      id="maxResultLength"
+                      name="maxResultLength"
+                      class="dark:bg-gray-600 bg-gray-300 text-gray-900 m-0 px-0 py-3 text-sm border-0 block w-full dark:placeholder-gray-400 dark:text-white"
+                    >
+                      <!-- Add max result length options as needed -->
+                      <option value="short">Short</option>
+                      <option value="medium">Medium</option>
+                      <option value="long">Long</option>
+                    </select>
+                  </div>
                 </div>
-
                 <!-- Submit Button -->
                 <div class="mt-6">
                   <button
-                    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                    class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-blue-600 flex justify-center items-center gap-2"
                     type="submit"
                   >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_120_2541)">
+                        <path
+                          d="M2.04004 13.4487V10.9688H4.52004"
+                          stroke="#1E1F24"
+                          stroke-width="0.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M13.3392 5.81583C13.6023 7.21978 13.3919 8.67137 12.7409 9.94282C12.0899 11.2143 11.0353 12.2336 9.74241 12.8409C8.44954 13.4482 6.99163 13.6091 5.59745 13.2983C4.20326 12.9876 2.9517 12.2227 2.03916 11.1238M0.661156 8.18583C0.398025 6.78187 0.60845 5.33029 1.25941 4.05884C1.91038 2.78739 2.96504 1.76804 4.2579 1.16074C5.55077 0.553435 7.00868 0.392544 8.40287 0.703314C9.79705 1.01408 11.0486 1.77893 11.9612 2.87783"
+                          stroke="#1E1F24"
+                          stroke-width="0.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.9604 0.552734V3.03273H9.4804M4.0904 7.33473C3.7394 7.27373 3.7394 6.76973 4.0904 6.70873C4.71188 6.60057 5.28708 6.30978 5.74265 5.87344C6.19822 5.4371 6.51354 4.87498 6.6484 4.25873L6.6694 4.16173C6.7454 3.81473 7.2394 3.81273 7.3184 4.15873L7.3444 4.27173C7.48444 4.88519 7.80262 5.44359 8.25897 5.87681C8.71532 6.31003 9.2895 6.59876 9.9094 6.70673C10.2624 6.76773 10.2624 7.27473 9.9094 7.33673C9.28963 7.44464 8.71554 7.73322 8.2592 8.16625C7.80287 8.59928 7.48462 9.15747 7.3444 9.77073L7.3184 9.88273C7.2394 10.2287 6.7454 10.2267 6.6694 9.87973L6.6494 9.78373C6.51441 9.16722 6.19879 8.6049 5.74283 8.16853C5.28687 7.73217 4.71125 7.44154 4.0894 7.33373L4.0904 7.33473Z"
+                          stroke="#1E1F24"
+                          stroke-width="0.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_120_2541">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
                     Generate Text
                   </button>
                 </div>
               </div>
             </div>
             <div
-              class="bg-blue-500 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 text-white font-medium group lg:col-span-3"
-            ></div>
+              class="bg-white dark:bg-gray-800 rounded-md flex items-center justify-between text-white font-medium group lg:col-span-3"
+            >
+          <div class="w-full h-full rounded shadow-md p-5">
+
+          </div>
+          </div>
           </div>
         </div>
       </div>
